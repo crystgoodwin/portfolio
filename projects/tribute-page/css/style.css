@@ -1,0 +1,118 @@
+#main {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 13px;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url('http://cdn.history.com/sites/2/2014/01/martin-luther-king-1965-selma-hero-fix-H.jpeg');
+  background-size: cover;
+}
+
+#title {
+  color: #fff;
+  padding: 100px;
+}
+
+blockquote {
+  font-family: 'Source Serif Pro', serif;
+  margin-bottom: -30px;
+  position: relative;
+  max-width: 300px;
+  padding-left: 0.4em;
+  border: none;
+  margin: 80px auto;
+}
+
+blockquote h3 {
+  font-size: 21px;
+}
+
+blockquote h3:before {
+  content: "\201C";
+  font-weight: bold;
+  font-size: 100px;
+  color: #648880;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  font-family: 'Georgia';
+}
+
+blockquote h3:after {
+  content: "\201D";
+  font-weight: bold;
+  font-size: 100px;
+  color: #648880;
+  position: absolute;
+  top: 60px;
+  right: -10px;
+  font-family: 'Georgia';
+}
+
+.speech {
+  margin: 0;
+  color: #fff;
+  background-color: #293f50;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+#tribute-info {
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+@@media (max-width: 700px) {
+  #tribute-info {
+    margin: 25px 25px;
+  }
+}
+
+h2 {
+  color: #648880;
+  line-height: 80px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Source Serif Pro', serif;
+}
+
+a {
+    color: #648880;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #293f50;
+}
+
+#img-div {
+  border: 1px solid #888;
+  margin-bottom: 60px;
+}
+
+#img-caption {
+  padding: 4px 15px;
+}
+
+.full-width-div {
+  margin: 0;
+  background-color: #293f50;
+  padding: 60px 40px;
+}
+
+.col-md-4 {
+  padding: 20px;
+}
+
+.speech-location {
+  margin-bottom: 40px;
+}
