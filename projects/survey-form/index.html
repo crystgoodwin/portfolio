@@ -15,176 +15,174 @@
 
 <body>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
   <main>
-    <h1 id="title">Survey Form</h1>
-    <div class="container">
-      <p id="description">Let us know how we can improve freeCodeCamp.</p>
-      <form id="survey-form">
-        <div class="form-group row">
-          <label for="name" id="name-label" class="col-sm-4 col-form-label">* Name</label>
-          <div class="col-sm-8">
-            <input type"name" class="form-control" id="name" placeholder="Enter your name" required>
-          </div>
+  <h1 id="title">Survey Form</h1>
+  <div class="container">
+    <p id="description">Let us know how we can improve freeCodeCamp.</p>
+    <form id="survey-form">
+      <div class="form-group row">
+        <label for="name" id="name-label" class="col-sm-4 col-form-label">* Name</label>
+        <div class="col-sm-8">
+          <input type"name" class="form-control" id="name" placeholder="Enter your name" required>
         </div>
-         <div class="form-group row">
-          <label for="email" id="email-label" class="col-sm-4 col-form-label">* Email</label>
-          <div class="col-sm-8">
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-          </div>
+      </div>
+       <div class="form-group row">
+        <label for="email" id="email-label" class="col-sm-4 col-form-label">* Email</label>
+        <div class="col-sm-8">
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
-        <div class="form-group row">
-          <label for="number" id="number-label" class="col-sm-4 col-form-label">* Age</label>
-          <div class="col-sm-8">
-            <input type="number" min="18" max="120" class="form-control" id="number" placeholder="Age" required>
-          </div>
+      </div>
+      <div class="form-group row">
+        <label for="number" id="number-label" class="col-sm-4 col-form-label">* Age</label>
+        <div class="col-sm-8">
+          <input type="number" min="18" max="120" class="form-control" id="number" placeholder="Age" required>
         </div>
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-4 pt-0">Which option best describes your current role?</legend>
-              <div class="form-check">
-                <select class="form-control" id="dropdown">
-                  <option selected>Select an option</option>
-                  <option>Student</option>
-                  <option>Full Time Job</option>
-                  <option>Full Time Learner</option>
-                  <option>Prefer not to say</option>
-                  <option>Other</option>
-                </select>
-              </div>
-          </div>
-        </fieldset>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-4 pt-0">Which option best describes your current role?</legend>
+            <div class="form-check">
+              <select class="form-control" id="dropdown">
+                <option selected>Select an option</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+              </select>
+            </div>
+        </div>
+      </fieldset>
 
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-4 pt-0">* How likely are you to recommend freeCodeCamp to a friend?</legend>
-            <div class="col-sm-8">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
-                <label class="form-check-label" for="gridRadios1">
-                  Definitely
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">
-                  Maybe
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                <label class="form-check-label" for="gridRadios3">
-                  Not Sure
-                </label>
-              </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-4 pt-0">* How likely are you to recommend freeCodeCamp to a friend?</legend>
+          <div class="col-sm-8">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                Definitely
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Maybe
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                Not Sure
+              </label>
             </div>
           </div>
-        </fieldset>
+        </div>
+      </fieldset>
 
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-4 pt-0">What do you like most in freeCodeCamp?</legend>
-              <div class="form-check">
-                <select class="form-control" id="dropdown-like">
-                  <option selected>Select an option</option>
-                  <option>Challenges</option>
-                  <option>Projects</option>
-                  <option>Community</option>
-                  <option>Open Source</option>
-                </select>
-              </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-4 pt-0">Things that should be improved in the future (Check all that apply):</legend>
-            <div class="col-sm-8">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck1" id="gridCheck1" value="1">
-                <label class="form-check-label" for="gridCheck1">
-                  Front-end Projects
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck2" id="gridCheck2" value="2">
-                <label class="form-check-label" for="gridCheck2">
-                  Back-end Projects
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck3" id="gridCheck3" value="3">
-                <label class="form-check-label" for="gridCheck3">
-                  Data Visualization
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck4" id="gridCheck4" value="4">
-                <label class="form-check-label" for="gridCheck4">
-                  Challenges
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck5" id="gridCheck5" value="5">
-                <label class="form-check-label" for="gridCheck5">
-                  Open Source Community
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck6" id="gridCheck6" value="6">
-                <label class="form-check-label" for="gridCheck6">
-                  Gitter help rooms
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck7" id="gridCheck7" value="7">
-                <label class="form-check-label" for="gridCheck7">
-                  Videos
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck8" id="gridCheck8" value="8">
-                <label class="form-check-label" for="gridCheck8">
-                  City Meetups
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck9" id="gridCheck9" value="9">
-                <label class="form-check-label" for="gridCheck9">
-                  Wiki
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck10" id="gridCheck10" value="10">
-                <label class="form-check-label" for="gridCheck10">
-                  Forum
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="gridCheck11" id="gridCheck11" value="11">
-                <label class="form-check-label" for="gridCheck11">
-                  Additional Courses
-                </label>
-              </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-4 pt-0">What do you like most in freeCodeCamp?</legend>
+            <div class="form-check">
+              <select class="form-control" id="dropdown-like">
+                <option selected>Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+              </select>
             </div>
-          </div> <!-- End of checkbox -->
-        </fieldset> <!-- End of checkbox -->
+        </div>
+      </fieldset>
 
-        <div class="form-group row">
-          <label for="comment" class="col-sm-4 col-form-label">Any Comments or Suggestions?</label>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-4 pt-0">Things that should be improved in the future (Check all that apply):</legend>
           <div class="col-sm-8">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Enter your comment here..."></textarea>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck1" id="gridCheck1" value="1">
+              <label class="form-check-label" for="gridCheck1">
+                Front-end Projects
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck2" id="gridCheck2" value="2">
+              <label class="form-check-label" for="gridCheck2">
+                Back-end Projects
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck3" id="gridCheck3" value="3">
+              <label class="form-check-label" for="gridCheck3">
+                Data Visualization
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck4" id="gridCheck4" value="4">
+              <label class="form-check-label" for="gridCheck4">
+                Challenges
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck5" id="gridCheck5" value="5">
+              <label class="form-check-label" for="gridCheck5">
+                Open Source Community
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck6" id="gridCheck6" value="6">
+              <label class="form-check-label" for="gridCheck6">
+                Gitter help rooms
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck7" id="gridCheck7" value="7">
+              <label class="form-check-label" for="gridCheck7">
+                Videos
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck8" id="gridCheck8" value="8">
+              <label class="form-check-label" for="gridCheck8">
+                City Meetups
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck9" id="gridCheck9" value="9">
+              <label class="form-check-label" for="gridCheck9">
+                Wiki
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck10" id="gridCheck10" value="10">
+              <label class="form-check-label" for="gridCheck10">
+                Forum
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="gridCheck11" id="gridCheck11" value="11">
+              <label class="form-check-label" for="gridCheck11">
+                Additional Courses
+              </label>
+            </div>
           </div>
+        </div> <!-- End of checkbox -->
+      </fieldset> <!-- End of checkbox -->
+
+      <div class="form-group row">
+        <label for="comment" class="col-sm-4 col-form-label">Any Comments or Suggestions?</label>
+        <div class="col-sm-8">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Enter your comment here..."></textarea>
         </div>
-        <div class="form-group-row">
-          <div class="col-sm-10">
-        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-          </div>
+      </div>
+      <div class="form-group-row text-center">
+        <div class="col-sm-10">
+      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
         </div>
-      </form>
-    </div>
-  </main>
+      </div>
+    </form>
+  </div>
+</main>
 
 
 
